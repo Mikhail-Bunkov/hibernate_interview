@@ -4,6 +4,7 @@ import ru.bunkov.entity.Student;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import java.util.List;
 
 public class StudentDao {
 
@@ -35,5 +36,9 @@ public class StudentDao {
 
     public Student select(long id){
         return em.find(Student.class, id);
+    }
+
+    public List<Student> findAll(){
+        return em.createQuery("select s from Student s", Student.class).getResultList();
     }
 }
