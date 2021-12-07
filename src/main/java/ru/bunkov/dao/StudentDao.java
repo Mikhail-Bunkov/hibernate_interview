@@ -34,7 +34,7 @@ public class StudentDao {
         em.getTransaction().commit();
     }
 
-    public Student select(long id){
+    public Student findById(long id){
         return em.find(Student.class, id);
     }
 

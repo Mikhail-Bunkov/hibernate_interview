@@ -18,16 +18,16 @@ public class Main {
 //        dao.insert(new Student("Andrew",5));
 
 
-//        System.out.println(dao.select(3));
-//        System.out.println(dao.select(2));
-//        System.out.println(dao.select(5));
-//        System.out.println(dao.select(7));
-//        System.out.println(dao.select(8));
+//        System.out.println(dao.findById(3));
+//        System.out.println(dao.findById(2));
+//        System.out.println(dao.findById(5));
+//        System.out.println(dao.findById(7));
+//        System.out.println(dao.findById(8));
 //
 //        dao.delete(4);
-//        System.out.println(dao.select(4));
+//        System.out.println(dao.findById(4));
 //        dao.update(new Student(2,"Orion",5));
-//        System.out.println(dao.select(2));
+//        System.out.println(dao.findById(2));
 /////////////////     Все работает исправно!
     }
 }
